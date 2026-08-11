@@ -168,7 +168,7 @@ section {
     margin-left: 20px;
 }
 
-.social-media a {
+.social-media a:not(.btn-cv) {
     width: 42px;
     height: 42px;
     display: inline-flex;
