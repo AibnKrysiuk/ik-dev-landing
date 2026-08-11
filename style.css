@@ -192,6 +192,8 @@ section {
     height: 42px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    white-space: nowrap; /* nuevo: evita que "CV.pdf [⬇]" se parta en dos líneas */
     padding: .8rem 1.2rem;
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
