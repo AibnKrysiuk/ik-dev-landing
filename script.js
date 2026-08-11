@@ -218,3 +218,47 @@ skillTags.forEach(tag => {
         terminalOutput.scrollTop = terminalOutput.scrollHeight;
     });
 });
+
+const formContacto = document.getElementById('form-contacto');
+const feedbackForm = document.getElementById('form-feedback');
+const btnSubmit = document.getElementById('btn-form-submit');
+
+if (formContacto) {
+    formContacto.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Si el honeypot viene lleno, es un bot: descartamos en silencio
+        const honeypot = formContacto.querySelector('input[name="_gotcha"]');
+        if (honeypot && honeypot.value) {
+            return;
+        }
+
+        const textoOriginal = btnSubmit.textContent;
+        btnSubmit.disabled = true;
+        btnSubmit.textContent = 'ENVIANDO...';
+        feedbackForm.textContent = '';
+        feedbackForm.className = 'form-feedback';
+
+        try {
+            const response = await fetch(formContacto.action, {
+                method: 'POST',
+                body: new FormData(formContacto),
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                feedbackForm.textContent = '¡Mensaje enviado! Te voy a responder pronto.';
+                feedbackForm.classList.add('success');
+                formContacto.reset();
+            } else {
+                throw new Error('Respuesta no exitosa del servidor');
+            }
+        } catch (error) {
+            feedbackForm.textContent = 'Hubo un problema al enviar. Probá de nuevo o escribime directo por mail.';
+            feedbackForm.classList.add('error');
+        } finally {
+            btnSubmit.disabled = false;
+            btnSubmit.textContent = textoOriginal;
+        }
+    });
+}

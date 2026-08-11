@@ -1,0 +1,9 @@
+# Archivos de trabajo / bocetos que no van al sitio publicado
+Construccion/
+portfolio_mockup_*.html
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

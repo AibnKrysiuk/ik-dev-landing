@@ -848,6 +848,21 @@ section {
     margin-top: 10px;
 }
 
+.form-feedback {
+    font-family: "Fira Code", monospace;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+.form-feedback.success {
+    color: var(--color-accent);
+}
+
+.form-feedback.error {
+    color: #f15d53;
+}
+
 /* ============================================================================ */
 /* Footer / Status bar */
 /* ============================================================================ */
