@@ -1,50 +1,318 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iván Krysiuk — En construcción</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="style.css">
+    <title>Iván Krysiuk - Portfolio</title>
 </head>
 <body>
+    <header> 
+        <div class="logo">[IK.dev]</div>
 
-    <div class="wrapper">
-        <div class="terminal-box">
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <span class="t-btn close"></span>
-                    <span class="t-btn minimize"></span>
-                    <span class="t-btn maximize"></span>
+        <span class="material-symbols-outlined" id="menu-icon" aria-label="Abrir menú">menu</span>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio"> Inicio </a></li>
+                <li><a href="#informacion"> Sobre mí </a></li>
+                <li><a href="#habilidades"> Habilidades </a></li>
+                <li><a href="#proyectos"> Proyectos </a></li>
+                <li><a href="#contacto"> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inicio" id="inicio">
+        <div class="inicio-img">
+            <img src="assets/yo-acuarelado.png" alt="Retrato ilustrado de Iván Krysiuk">
+        </div>
+
+        <div class="inicio-content">
+            <h3>// PORTFOLIO V.1.0 </h3>
+            <h1>Iván Krysiuk</h1>
+            <h2>Desarrollador Fullstack</h2>
+            <p>Construyo soluciones fullstack, con especial interés en la lógica detrás de escena: diseño de APIs, 
+                estructura de bases de datos y eficiencia en el flujo de datos. 
+                Me manejo cómodo en todo el stack — desde la interfaz hasta el despliegue — y disfruto tanto resolver un problema de backend complejo como cuidar el detalle de una buena experiencia de usuario.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ivankrysiuk/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg></a>
+                <a href="https://github.com/AibnKrysiuk" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"/></svg></a>
+                <div class="btn-cv">CV.pdf [⬇]</div>
+            </div>  
+        </div>
+    </section>
+
+    <section class="informacion" id="informacion">
+        <div class="informacion-content">
+            <div class="sec-label">// SOBRE MÍ</div>
+            <p>Desarrollador con formación técnica y una genuina pasión por las ciencias y la tecnología. 
+            Estudio <span style="color: #5DCAA5;">Analista Programador Universitario</span> en la 
+            <a href="https://www.info.unlp.edu.ar/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #5DCAA5;">UNLP</a> 
+            y me mantengo en aprendizaje constante, tanto dentro como fuera del aula, realizando cursos sobre nuevas herramientas y paradigmas de desarrollo.</p>
+
+            <p>Mi perfil combina pensamiento lógico y analítico, capacidad para diagnosticar y resolver problemas de forma estructurada, 
+            y una mentalidad orientada a construir soluciones funcionales y bien cuidadas.</p>
+
+            <p>Mi recorrido actual y experiencia como Maestro Pizzero y Encargado de Cocina me dio un criterio agudo bajo presión, paciencia, 
+            atención al detalle y una fuerte disciplina para seguir y optimizar procesos estructurados. 
+            Fuera del código y la cocina, canalizo mi creatividad haciendo música. 
+            Estoy en transición hacia mi primer empleo formal en IT, abierto a oportunidades en desarrollo backend, 
+            fullstack o cualquier rol donde pueda seguir creciendo y aportando desde el primer día.</p>
+            
+            <div class="sec-label">// FORMACIÓN</div>
+            <div class="edu-item">
+                <div class="edu-title">ANALISTA PROGRAMADOR UNIVERSITARIO</div>
+                <div class="edu-place">UNLP — Universidad Nacional de La Plata</div>
+                <div class="edu-period">2022 — EN CURSO</div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-title">INGENIERÍA ELECTRÓNICA</div>
+                <div class="edu-place">UNLP — Universidad Nacional de La Plata</div>
+                <div class="edu-period">2020 — 2022 (Incompleto)</div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-title">INGENIERÍA CIVIL</div>
+                <div class="edu-place">UTN FrLP — Universidad Tecnológica Nacional</div>
+                <div class="edu-period">2017 — 2020 (2° año cursado)</div>
+            </div>
+
+            <div class="sec-label" style="margin-top: 4rem;">// CURSOS DESTACADOS</div>
+            <div class="curso-item">
+                <span class="curso-nombre">Capacitación .NET</span>
+                <span class="curso-separador">—</span>
+                <span class="curso-lugar">BDT Global</span>
+                <span class="curso-anio">2023</span>
+            </div>
+
+            <div class="curso-item">
+                <span class="curso-nombre">Fullstack Python</span>
+                <span class="curso-separador">—</span>
+                <span class="curso-lugar">CoderHouse</span>
+                <span class="curso-anio">2024</span>
+            </div>
+
+            <div class="curso-item">
+                <span class="curso-nombre">Argentina Programa</span>
+                <span class="curso-separador">—</span>
+                <span class="curso-lugar">Secretaría de Industria y Desarrollo Productivo</span>
+                <span class="curso-anio">2021</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <div class="habilidades-content">
+            <div class="sec-label">// HABILIDADES</div>
+            
+            <!-- Contenedor Principal de Dos Columnas -->
+            <div class="skills-layout-wrapper">
+                
+                <!-- Columna Izquierda: Los Paneles de Tags -->
+                <div class="skills-grid">
+                    <div class="skill-coll">
+                        <div class="skill-col-title">LENGUAJES</div>
+                        <span class="skill-tag" data-skill="csharp">C#</span>
+                        <span class="skill-tag" data-skill="python">Python</span>
+                        <span class="skill-tag" data-skill="javascript">JavaScript</span>
+                        <span class="skill-tag" data-skill="html">HTML</span>
+                        <span class="skill-tag" data-skill="css">CSS</span>
+                    </div>
+                    <div class="skill-coll">
+                        <div class="skill-col-title">FRAMEWORKS / LIBS</div>
+                        <span class="skill-tag" data-skill="dotnet">ASP.NET Core</span>
+                        <span class="skill-tag" data-skill="avalonia">Avalonia UI</span>
+                        <span class="skill-tag" data-skill="django">Django</span>
+                        <span class="skill-tag" data-skill="questpdf">QuestPDF</span>
+                        <span class="skill-tag" data-skill="moviepy">MoviePy</span>
+                    </div>
+                    <div class="skill-coll">
+                        <div class="skill-col-title">HERRAMIENTAS</div>
+                        <span class="skill-tag" data-skill="github">GitHub</span>
+                        <span class="skill-tag" data-skill="sqlite">SQLite</span>
+                        <span class="skill-tag" data-skill="gcloud">Google Cloud</span>
+                        <span class="skill-tag" data-skill="netlify">Netlify</span>
+                    </div>
+                    <!-- Nueva sección de Habilidades Blandas -->
+                    <div class="skill-coll">
+                        <div class="skill-col-title">METODOLOGÍAS / SOFT</div>
+                        <span class="skill-tag" data-skill="pressure">Gestión bajo presión</span>
+                        <span class="skill-tag" data-skill="logic">Resolución lógica</span>
+                        <span class="skill-tag" data-skill="process">Optimización de procesos</span>
+                        <span class="skill-tag" data-skill="team">Trabajo en equipo</span>
+                    </div>
                 </div>
-                <div class="terminal-title">ik.dev@servidor:~</div>
+
+                <!-- Columna Derecha: La Consola Interactiva -->
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="t-btn close"></span>
+                            <span class="t-btn minimize"></span>
+                            <span class="t-btn maximize"></span>
+                        </div>
+                        <div class="terminal-title">ik.dev@backend:~</div>
+                        <button type="button" id="btn-limpiar-terminal" class="terminal-clear-btn">Limpiar</button>
+                    </div>
+                    <div class="terminal-body" id="terminal-output">
+                        <p class="terminal-line init-line"><span class="prompt">ik.dev@backend:~$</span> ./mostrar_habilidades.sh</p>
+                        <p class="terminal-text hint">[INFO] Selecciona una tecnología o habilidad de la izquierda para desplegar sus ocurrencias, proyectos vinculados o credenciales asociadas...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <div class="proyectos-content">
+            <div class="sec-label">// PROYECTOS</div>
+
+            <!-- Contenedor del Layout Asimétrico Principal -->
+            <div class="proyectos-main-layout">
+                
+                <!-- COLUMNA IZQUIERDA: Proyecto Estrella (Doble Alto) -->
+                <div class="col-estrella">
+                    <article class="proyecto-card estrella">
+                        <div class="proyecto-img-container">
+                            <img src="./assets/preview.webp" alt="Captura de QuickDocs">
+                        </div>
+                        <div class="proyecto-info">
+                            <div class="proyecto-meta">2026 | ACTUALIDAD</div>
+                            <h3 class="proyecto-titulo">QUICKDOCS</h3>
+                            <div class="proyecto-tags-status">
+                                <span class="status-tag accent-bg">BETA ACTIVA</span>
+                                <span class="status-tag accent-bg-light">2 USUARIOS</span>
+                            </div>
+                            <p class="proyecto-descripcion">
+                                App de escritorio multiplataforma para emisión de presupuestos, recibos, remitos y notas de crédito en PDF. Gestión de clientes, productos e historial. Windows y Linux.
+                            </p>
+                            <div class="proyecto-tech-stack">
+                                C# &bull; AVALONIA UI &bull; ASP.NET CORE &bull; EF CORE &bull; SQLITE &bull; QUESTPDF
+                            </div>
+                            <div class="proyecto-links">
+                                <a href="https://github.com/AibnKrysiuk/QuickDocs-V2.0" class="btn-link">[GITHUB &nearrow;]</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- COLUMNA DERECHA: Lista de otros 3 proyectos completados -->
+                <div class="col-secundarios">
+                    
+                    <!-- Proyecto 1: Portfolio Artista -->
+                    <article class="proyecto-card-mini">
+                        <div class="mini-meta">2024 · PROYECTO FREELANCE</div>
+                        <div class="mini-header">
+                            <h4 class="mini-titulo">BUGGG — PORTFOLIO ARTISTA</h4>
+                            <div class="mini-links">
+                                <a href="https://github.com/AibnKrysiuk/Buggg">[GITHUB &nearrow;]</a> <a href="https://buggg.netlify.app/">[WEB]</a>
+                            </div>
+                        </div>
+                        <p class="mini-desc">Sitio inmersivo desarrollado para un artista real, con GIFs interactivos y reproducción de poemas mediante autoescritura. Primer proyecto freelance cobrado.</p>
+                        <div class="mini-tech">HTML &bull; CSS &bull; JS &bull; GOOGLE CLOUD STORAGE &bull; NETLIFY</div>
+                    </article>
+                </div>
             </div>
 
-            <div class="terminal-body">
-                <p><span class="prompt">ik.dev@servidor:~$</span> ./deploy_portfolio.sh</p>
-                <p class="output">[INFO] Configurando infraestructura...</p>
-                <p class="output">[INFO] Conectando dominio...</p>
-                <p class="output status-line">[EN PROGRESO] Construyendo sitio<span class="cursor">_</span></p>
+            <!-- SECCIÓN INFERIOR: Laboratorio / En Desarrollo (Ancho Completo) -->
+            <div class="laboratorio-section">
+                <div class="sec-label-2">// EN DESARROLLO / LABORATORIO</div>
+                
+                <article class="proyecto-row-bottom">
+                    <div class="proyecto-row-info">
+                        <h3 class="proyecto-titulo-sm">SHORT GENERATOR</h3>
+                        <p class="proyecto-descripcion-sm">
+                            Automatización para producción de videos cortos con voz sintética, subtítulos y composición visual generados programáticamente.
+                        </p>
+                        <div class="proyecto-tech-stack-sm">
+                            PYTHON &bull; MOVIEPY &bull; PILLOW &bull; HUGGING FACE API &bull; EDGE-TTS
+                        </div>
+                    </div>
+                    <div class="proyecto-row-action">
+                        <a href="https://github.com/AibnKrysiuk/IA-Shorts-Generator" class="btn-link">[GITHUB &nearrow;]</a>
+                    </div>
+                </article>
+                
+                <!-- Podés duplicar este .proyecto-row-bottom si sumás el segundo en desarrollo -->
             </div>
 
-            <div class="terminal-footer">
-                <h1>Iván Krysiuk</h1>
-                <p class="subtitle">Desarrollador Fullstack — Portfolio en construcción</p>
+        </div>
+    </section>
 
-                <div class="social-links">
+    <section class="contacto" id="contacto">
+        <div class="contacto-content">
+            
+            <div class="contacto-col-left">
+                <div class="sec-label">// CONTACTO</div>
+                <h2 class="contacto-titulo">HABLEMOS</h2>
+                <div class="contacto-status">ABIERTO A OPORTUNIDADES &bull; LA PLATA, AR</div>
+                
+                <div class="contacto-social-icons">
                     <a href="https://www.linkedin.com/in/ivankrysiuk/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
                         </svg>
                     </a>
+
                     <a href="https://github.com/AibnKrysiuk" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                             <path d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"/>
                         </svg>
                     </a>
+
+                    <button type="button" id="btn-email" aria-label="Copiar email al portapapeles">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </button>
+
+                    <span id="email-feedback" role="status" aria-live="polite"></span>
                 </div>
             </div>
-        </div>
-    </div>
 
+            <div class="contacto-col-right">
+                <form class="contacto-form">
+                    <div class="form-group">
+                        <label class="form-label">NOMBRE</label>
+                        <input type="text" class="form-input" placeholder="Tu nombre...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">EMAIL</label>
+                        <input type="email" class="form-input" placeholder="tu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">MENSAJE</label>
+                        <textarea class="form-textarea" placeholder="Escribí tu mensaje..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">ENVIAR MENSAJE [SEND]</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- Status Bar / Footer Flotante Minimalista -->
+    <footer class="status-bar">
+        <div class="status-left">
+            <span class="status-indicator">●</span>
+            <span class="status-text">Ready</span>
+            <span class="status-divider">|</span>
+            <span class="status-text font-tech">UTF-8</span>
+        </div>
+        <div class="status-right">
+            <span class="status-text">v1.0.0</span>
+            <span class="status-divider">|</span>
+            <span class="status-text">Hecho por Iván Krysiuk</span>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
